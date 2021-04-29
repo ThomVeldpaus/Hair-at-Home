@@ -33,6 +33,7 @@ class DashboardController extends AbstractDashboardController
      */
     public function configureMenuItems(): iterable
     {
+        // todo: make frontend register forms for customer and user with REACT
         yield MenuItem::linkToRoute('Back to the website', 'fas fa-home', 'homepage');
         yield MenuItem::linkToCrud('Customers', 'fas fa-map-marker-alt', Customer::class);
         yield MenuItem::linkToCrud('User', 'fas fa-map-marker-alt', Customer::class);
